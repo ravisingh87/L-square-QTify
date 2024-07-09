@@ -1,1 +1,0 @@
-Hi I'm now working on Qtify react app.
