@@ -3,4 +3,11 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --font: 'Poppins';
+  --color-primary: #34c94b;
+}
+
+:root body {
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--color-black); */
 }
