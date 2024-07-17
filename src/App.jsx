@@ -1,20 +1,21 @@
 import React from 'react';
-import Hero from './components/Hero/Hero';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
+import Hero from './components/Hero/Hero';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+
 const App = () => {
   return (
-    <div>
-      {/* <Routes> */}
+    <BrowserRouter>
       <Navbar />
       <Hero />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
       <Footer />
-      {/* <Route exact path="/" component={Home} /> */}
-      {/* </Routes> */}
-    </div>
+    </BrowserRouter>
   );
 };
 

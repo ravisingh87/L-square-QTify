@@ -9,5 +9,6 @@
 :root body {
   margin: 0;
   padding: 0;
-  /* background-color: var(--color-black); */
+  background-color: var(--color-black);
+  font-family: var(--font);
 }
