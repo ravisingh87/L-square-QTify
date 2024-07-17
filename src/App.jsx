@@ -4,7 +4,8 @@ import './App.css';
 const App = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
+      <h1>HI</h1>
     </div>
   );
 };
