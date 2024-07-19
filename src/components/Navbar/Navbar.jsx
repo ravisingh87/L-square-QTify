@@ -2,13 +2,13 @@ import React, { lazy, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CutomButton from '../Button/Button';
 import Logo from '../Logo/Logo';
-// import Search from '../Search/Search';
+import Search from '../Search/Search';
 // const FeedBackModal = lazy(() => import('../Modal/FeedBackModal.jsx'));
 import FeedBackModal from '../Modal/FeedBackModal';
 import './Navbar.css';
 
-// function Navbar({ searchData }) {
-function Navbar() {
+function Navbar({ searchData }) {
+  // function Navbar() {
   const [open, setOpen] = useState(false);
   const handleModal = () => setOpen(!open);
   return (
@@ -16,7 +16,7 @@ function Navbar() {
       <Link to="/">
         <Logo />
       </Link>
-      {/* <Search placeholder="Search a song of your choice" searchData={searchData} /> */}
+      <Search placeholder="Search a song of your choice" />
       <CutomButton
         title="Give Feedback"
         handleModal={handleModal}
