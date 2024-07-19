@@ -23,7 +23,10 @@ const AlbumCard = ({ data }) => {
         }}>
         <CardMedia component="img" height="140" image={data.image} alt="album" />
         <CardContent sx={{ padding: '10px' }}>
-          <Chip label={`${data.follows} Follows`} variant="outlined" />
+          <Chip
+            label={data.genre ? `${data.likes} Likes` : `${data.follows} Follows`}
+            variant="outlined"
+          />
         </CardContent>
       </CardActionArea>
       <CardActions>

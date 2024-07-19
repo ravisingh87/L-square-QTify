@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import axios from 'axios';
 
 import AlbumComponent from '../AlbumList/AlbumComponent';
+import SongsAlbum from '../Songs/SongsAlbum';
 const Home = () => {
   const [data, setData] = useState([]);
   const [newAlbum, setNewAlbum] = useState([]);
@@ -24,6 +25,7 @@ const Home = () => {
     <Grid container className="grid-container">
       <AlbumComponent data={data} title="Top Album" idx={1} />
       <AlbumComponent data={newAlbum} title="New Album" />
+      <SongsAlbum />
     </Grid>
   );
 };
