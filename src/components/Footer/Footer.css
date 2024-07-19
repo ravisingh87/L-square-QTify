@@ -7,7 +7,7 @@ footer {
 }
 
 h6 {
-  font-family: Poppins;
+  font-family: var(--font);
   font-size: 50px;
   font-weight: 600;
   line-height: 75px;

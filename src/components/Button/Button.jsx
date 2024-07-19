@@ -17,7 +17,7 @@ const CutomButton = ({ title, handleModal, color, textColor }) => {
   );
 };
 
-Button.propTypes = {
+CutomButton.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   textColor: PropTypes.string.isRequired,
