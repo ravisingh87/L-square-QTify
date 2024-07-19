@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions, Chip } from '@mui/material';
 
 const AlbumCard = ({ data }) => {
-  console.log('Albumcard data', data);
   return (
     <Card
       sx={{
@@ -15,8 +14,7 @@ const AlbumCard = ({ data }) => {
         backgroundColor: 'black',
         borderRadius: '10px',
         marginRight: '10px'
-      }}
-      key={data.id}>
+      }}>
       <CardActionArea
         sx={{
           backgroundColor: '#ffffff',

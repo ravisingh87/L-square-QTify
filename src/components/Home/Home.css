@@ -2,3 +2,33 @@
   width: 100%;
   height: 20vh;
 }
+.slider {
+  width: 100%;
+  margin-top: 10px;
+  /* left: 30px; */
+}
+
+.slick-prev {
+  left: 10px !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 25px !important;
+}
+
+.slick-next:before {
+  color: var(--color-primary) !important;
+}
+.slick-prev:before {
+  color: var(--color-primary) !important;
+}
+
+.slick-list {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.grid_j {
+  margin-top: 10px !important;
+}
