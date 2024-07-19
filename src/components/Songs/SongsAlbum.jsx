@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
 import Slider from 'react-slick';
 import axios from 'axios';
 import AlbumCard from '../Card/AlbumCard';
