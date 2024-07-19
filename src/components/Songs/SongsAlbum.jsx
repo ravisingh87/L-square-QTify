@@ -49,10 +49,7 @@ const SongsAlbum = () => {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log('handleChange', data);
-    console.log('handleChange', newValue);
     const newData = data.filter((item) => item.genre.label === newValue);
-    console.log('new data', newData);
     setGenreSongs(newData);
   };
 
