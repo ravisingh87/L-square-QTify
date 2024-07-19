@@ -1,8 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Button from '@mui/material/Button';
 import './Button.css';
 
-const Button = ({ title }) => {
-  return <button className="button">{title}</button>;
+const CutomButton = ({ title, handleModal, color, textColor }) => {
+  return (
+    <Button
+      onClick={handleModal}
+      sx={{
+        backgroundColor: `${color}`,
+        color: `${textColor}`,
+        ':hover': { backgroundColor: `${color}!important` }
+      }}>
+      {title}
+    </Button>
+  );
 };
 
-export default Button;
+Button.propTypes = {
+  title: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  textColor: PropTypes.string.isRequired,
+  handleModal: PropTypes.func
+};
+
+export default CutomButton;
