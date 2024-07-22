@@ -53,11 +53,17 @@ const SongsAlbum = () => {
   };
 
   const fetchData = async () => {
-    const resTop = await axios('https://qtify-backend-labs.crio.do/songs');
+    const resTop = await axios('https://qtify-backend-labs.crio.do/songs', {
+      'access-control-allow-origin': '*',
+      'Content-type': 'application/json; charset=UTF-8'
+    });
     setData(resTop.data);
   };
   const fetchTabs = async () => {
-    const res = await axios('https://qtify-backend-labs.crio.do/genres');
+    const res = await axios('https://qtify-backend-labs.crio.do/genres', {
+      'access-control-allow-origin': '*',
+      'Content-type': 'application/json; charset=UTF-8'
+    });
     setTabs(res.data.data);
   };
 

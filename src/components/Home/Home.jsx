@@ -10,9 +10,15 @@ const Home = () => {
   const [newAlbum, setNewAlbum] = useState([]);
 
   const fetchData = async () => {
-    const resTop = await axios('https://qtify-backend-labs.crio.do/albums/top');
+    const resTop = await axios('https://qtify-backend-labs.crio.do/albums/top', {
+      'access-control-allow-origin': '*',
+      'Content-type': 'application/json; charset=UTF-8'
+    });
     setData(resTop.data);
-    const resNew = await axios('https://qtify-backend-labs.crio.do/albums/new');
+    const resNew = await axios('https://qtify-backend-labs.crio.do/albums/new', {
+      'access-control-allow-origin': '*',
+      'Content-type': 'application/json; charset=UTF-8'
+    });
     setNewAlbum(resNew.data);
   };
 
